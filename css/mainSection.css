@@ -10,4 +10,17 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* سایه کوچک */
   height: calc(100vh - 3rem); /* ارتفاع کامل صفحه منهای فاصله از بالا */
   overflow: auto; /* در صورت نیاز، اسکرول را فعال می‌کند */
+  transition: margin 0.3s ease; /* اضافه کردن انیمیشن نرم برای فاصله‌ها */
+}
+/* تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+  .mainSection {
+    margin-left: calc(4rem + 3rem); /* فاصله کمتر در صفحه‌های تبلت */
+  }
+}
+
+@media (max-width: 480px) {
+  .mainSection {
+    margin-left: calc(3.5rem + 2rem); /* فاصله کمتر در صفحه‌های موبایل */
+  }
 }
