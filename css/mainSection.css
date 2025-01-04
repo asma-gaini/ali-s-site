@@ -1,0 +1,13 @@
+/* تنظیمات باکس اصلی (mainSection) */
+.mainSection {
+  margin-left: calc(5.5rem + 3rem); /* فاصله از سمت چپ نوار ناوبری */
+  margin-top: 1rem; /* فاصله از بالای صفحه */
+  margin-right: 1rem; /* فاصله از سمت راست */
+  margin-bottom: 1rem; /* فاصله از پایین */
+  background-color: #fff; /* پس‌زمینه سفید */
+  border-radius: 10px; /* گوشه‌های گرد */
+  padding: 10px; /* فاصله داخلی */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* سایه کوچک */
+  height: calc(100vh - 3rem); /* ارتفاع کامل صفحه منهای فاصله از بالا */
+  overflow: auto; /* در صورت نیاز، اسکرول را فعال می‌کند */
+}
