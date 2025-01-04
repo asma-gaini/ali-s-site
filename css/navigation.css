@@ -56,6 +56,13 @@ body {
 
 .navbar__link:hover {
   color: #fff;
+  top: 0;
+  left: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #406ff3;
+  border-radius: 17.5px;
+  transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
 }
 
 .navbar:not(:hover) .navbar__link:focus,
@@ -68,7 +75,7 @@ body {
   position: relative;
 }
 
-.navbar__item:last-child:before {
+/* .navbar__item:last-child:before {
   content: "";
   position: absolute;
   opacity: 0;
@@ -80,7 +87,7 @@ body {
   background: #406ff3;
   border-radius: 17.5px;
   transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
-}
+} */
 /* تنظیمات برای صفحه‌های کوچک‌تر (موبایل) */
 @media (max-width: 768px) {
   .navbar {
@@ -92,7 +99,6 @@ body {
     width: 4rem; /* کاهش عرض لینک‌ها */
     /* height: 3rem; کاهش ارتفاع لینک‌ها */
   }
-
 }
 
 /* تنظیمات برای صفحه‌های خیلی کوچک‌تر (مانند موبایل‌های خیلی کوچک) */
@@ -101,7 +107,7 @@ body {
     width: 2.5rem; /* کاهش بیشتر عرض نوار ناوبری */
   }
   .navbar a {
-    width: 2.5rem; 
+    width: 2.5rem;
   }
 
   .navbar__link {
