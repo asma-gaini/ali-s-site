@@ -27,6 +27,7 @@ body {
   height: calc(100vh - 4rem);
   width: 5.5rem; /* عرض نوار ناوبری */
   transition: all 0.3s ease; /* اضافه کردن ترنزیشن برای نرم کردن تغییرات */
+  z-index: 10;
 }
 
 .navbar__link {
@@ -52,6 +53,7 @@ body {
   padding: 0.75rem;
   transition: 250ms ease all;
   border-radius: 17.5px;
+  z-index: 20; /* اضافه کردن z-index برای نمایش روی سایر عناصر */
 }
 
 .navbar__link:hover {
