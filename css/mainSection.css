@@ -1,5 +1,13 @@
 /* تنظیمات باکس اصلی (mainSection) */
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/FontsFree-Net-ir_sans.ttf);
+}
+
 .mainSection {
+  position: relative;
+  font-family: "iransans";
   margin-left: calc(5.5rem + 3rem); /* فاصله از سمت چپ نوار ناوبری */
   margin-top: 1rem; /* فاصله از بالای صفحه */
   margin-right: 1rem; /* فاصله از سمت راست */
@@ -12,6 +20,39 @@
   overflow: auto; /* در صورت نیاز، اسکرول را فعال می‌کند */
   transition: margin 0.3s ease; /* اضافه کردن انیمیشن نرم برای فاصله‌ها */
 }
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin: 25px;
+}
+.profile img {
+}
+.personalInfo {
+  direction: rtl; /* جهت راست به چپ */
+  text-align: right; /* متن راست‌چین */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* فاصله خطوط */
+  font-weight: bold;
+}
+
+.description {
+  background-color: #3f51b570;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  direction: rtl;
+  text-align: center;
+  line-height: 1.6;
+}
+.description_title {
+  font-weight: bold;
+  padding: 10px;
+}
+
 /* تنظیمات ریسپانسیو */
 @media (max-width: 768px) {
   .mainSection {
